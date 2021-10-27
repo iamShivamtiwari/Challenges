@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">User survey form</h1>
+      <p id="description">a survey form which is best to kill time</p>
+    </header>
+
+    <form id="survey-form" action="">
+      <div><label id="name-label" for="name">Name <input type="text" name="name" id="name" placeholder="name"
+          required></label></div>
+      <p><label id="email-label" for="email">email</label> <input type="email" id="email" name="email"
+          placeholder="email" required></p>
+      <p><label id="number-label" for="age">age</label> <input type="number" name="age" id="number" placeholder="age"
+          required min="10" max="99"></p>
+      <p>
+      <p><label for="dropdown">the reason you are here</label></p>
+      <select name="dropdown" id="dropdown">
+        <option value="none" selected disabled>select any one</option>
+        <option value="coder">coder</option>
+        <option value="developer">developer</option>
+        <option value="friend">friend</option>
+      </select>
+      </p>
+      <fieldset>
+        <legend>will you come back again</legend>
+        <label for="yes">yes</label>
+        <input type="radio" name="radio" id="yes" value="yes">
+        <label for="no">no</label>
+        <input type="radio" name="radio" id="no" value="no">
+      </fieldset>
+      <p>Choose your monster's features:</p>
+
+      <div>
+        <input type="checkbox" id="scales" name="scales" value="checked" checked>
+        <label for="scales">Scales</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="horns" name="horns" value="checked" checked>
+        <label for="horns">Horns</label>
+      </div>
+      <div>
+        <input type="checkbox" id="tail" name="tail" checked value="checked">
+        <label for="tail">tail</label>
+      </div>
+      <p><label for="textarea">your comments</label>
+        <textarea name="comments" id="textarea" cols="30" rows="10" placeholder="your comments"></textarea>
+      </p>
+      <div class="button">
+        <input type="submit" value="submit" id="submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
